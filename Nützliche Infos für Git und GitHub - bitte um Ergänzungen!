@@ -1,0 +1,41 @@
+Gute Zusammenfassung: http://t3n.de/news/eigentlich-github-472886/
+
+Git: Versionsverwaltung, Software kann dort auch heruntergeladen werden (alle Versionen)
+Hub: bestimmte Web-Fähigkeiten, die über Versionsverwaltung hinausgehen (die auch ohne Web-Interface oder zentralen Server
+möglich wären): grafische Darstellungen des Web-Prozesses, viele Befehle per Mausklick ausführbar (vs. Kommandozeile, GitShell)
+
+Wozu Versionsverwaltung? viele Entwickler an Software-Projekten o.a. beteiligt (bearbeiten unterschiedliche Teile des Programms),
+in Versionsverwaltung, werden einzelne Teile zusammen geführt und immer wieder aktualisiert,
+jede Version wird gespeichert, 
+
+bekannte OpenSource-Projekte auf GitHub: Linux-Kernel, Web-App-Framework Ruby on Rails, Java-Script-Bibliothek jQuery
+
+Git Projekt besteht grob aus drei Teilen (Workflow): vgl. Codeacademy
+1. Working Directory: dort können Änderungen an files vorgenommen werden (hinzufügen, löschen, modifizieren)
+2. Staging Area: Zwischen-Speicherung von Veränderungen, nur diese können commited werden
+3. Repository: Veränderungen als commit im Repository speichern
+
+Gist: Codeschnipsel und gesammelte Ideen, die aber nicht wirklich etwas mit dem Code im Repository zu tun haben
+
+Repository: ist das Verzeichnis für alle zu einem Projekt dazu gehörigen Dateien
+
+Branch ("Ast"): Es gibt einen "Hauptast" (meist mit Master bezeichnet) und verschiedene, nicht-produktive, Nebenäste (Beta-Versionen,
+Bug-Fixes), Nebenast kann mit Master-Ast gemerged (verschmolzen) werden (etwa wenn der Bug behoben ist)
+
+Pull Request: kann an den Administrator eines Projekts gestellt werden, wenn ein Bug gefixt oder eine neue Funktion eingebaut wurde
+in einer Branch, damit dieses mit dem Master gemerged wird
+
+Commit: ist das Einreichen einer neuen Version einer Branch, damit diese gespeichert wird (damit ist diese Version noch nicht mit der 
+Produktivversion gemerged)
+
+Fork (Gabel): eigener Ableger eines bereits bestehenden Repositories (als neues Repository, das mit der Originalversion nicht mehr
+verbunden ist; wird benutzt, um eigene Projekte aufzusetzen, die auf bereits bestehenden aufbauen
+
+Wichtige Kommandozeilen-Befehle: weitere s. https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
+git create -d "My new thing": schafft ein neues Projekt (Repository) mit Namen "My-new thing"
+git init: wandelt ein bestehendes directory in ein Git-Repository um (zu erkennen an /.git/ am Ende des Verzeichnisses (directory)
+git status: zeigt alle changes eines Repositories an, wenn es welche gibt (sonst untracked files)
+git add 'filename': fügt ein File zur Staging Area hinzu
+git diff 'filename': zeigt die Änderungen seit dem letzten commit an (mit 'q' wie quit beenden!)
+git commit -m: speichert file-changes dauerhauft im Repository, -m: message: welche Änderungen? mit " "-Anführungszeichen
+git log: zeigt Liste mit allen vorgenommenen commits
