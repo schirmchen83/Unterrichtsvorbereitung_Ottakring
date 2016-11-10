@@ -1,1 +1,19 @@
 Ideensammlung Katja
+
+- Probleme und Loesungen bei eigenen Softwareprojekten --> Was ist Versionsverwaltung (Video)
+- Was ist Git bzw. GitHub?
+- Wer arbeitet alles mit GitHub, Beispiele
+
+- GitHub-Account einrichten und gemeinsam erste Schritte (s. GitHub-Einfuehrung, machen wir aber alle gemeinsam)
+- fuer die GitHub-Affinen: entweder andere Aufgaben (bevorzugt) oder Hilfestellungen fuer Kollegen 
+
+danach erst:
+- wichtige Begriffe selbst erarbeiten (Repo, commit, Pull Request etc)
+- Grafik s. GitHub-Einfuehrung --> Workflow erklaeren
+
+- Beispielprojekt zeigen oder von GitHub-Affinen ein Projekt zeigen lassen und Arbeitsweise
+- komplexere Aufgabe: 	
+	- gemeinsam auf Repository zugreifen (collaborateur) und dort branchen, etwas hinzuf?gen/deleten, PullRequest stellen,
+	evtl. Probleme dabei erkennen (Mergen nicht m?glich), forken und schauen was passiert
+
+- Reflexion ueber Gelerntes, Ergebnissicherung
