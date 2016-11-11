@@ -12,7 +12,7 @@ bekannte OpenSource-Projekte auf GitHub: Linux-Kernel, Web-App-Framework Ruby on
 
 Git Projekt besteht grob aus drei Teilen (Workflow): vgl. Codeacademy
 1. Working Directory: dort können Änderungen an files vorgenommen werden (hinzufügen, löschen, modifizieren)
-2. Staging Area: Zwischen-Speicherung von Veränderungen, nur diese können commited werden
+2. Staging Area: Zwischen-Speicherung von Veränderungen, nur diese können committed werden
 3. Repository: Veränderungen als commit im Repository speichern
 
 Gist: Codeschnipsel und gesammelte Ideen, die aber nicht wirklich etwas mit dem Code im Repository zu tun haben
