@@ -8,8 +8,8 @@ Ideensammlung Katja
 - fuer die GitHub-Affinen: entweder andere Aufgaben (bevorzugt) oder Hilfestellungen fuer Kollegen 
 
 danach erst:
-- wichtige Begriffe selbst erarbeiten (Repo, commit, Pull Request etc) --> gemeinsam mit etherpad.net? Affine ergäenzen und
-korrigieren
+- wichtige Begriffe selbst erarbeiten (Repo, commit, Pull Request etc) --> gemeinsam mit etherpad.net, Affine ergäenzen und
+korrigieren, danach wird das File als Plain text ins Repo geuploaded
 - Grafik s. GitHub-Einfuehrung --> Workflow erklaeren
 
 - komplexere Aufgabe: 	
