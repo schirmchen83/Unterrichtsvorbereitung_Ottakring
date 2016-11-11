@@ -1,7 +1,9 @@
 Lernziele: ich kann
 einen account erstellen
 ein repo anlegen
-einen branch oeffnen und diesen mittels pull request committen
+einen branch oeffnen und diesen mittels pull request committen (Anmerkung: eine Branch wird nicht mittels Pull Request committed, 
+sondern gemerged (meist mit dem Master). Ein commit ist das Speichern einer neuen Version einer branch (kann auch der Master selbst
+sein), das ist im Workflow ganz gut ersichtlich s. Gist)
 eine fork öffnen
 
 Lehrziele:
