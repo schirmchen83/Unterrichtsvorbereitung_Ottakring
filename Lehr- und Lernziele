@@ -1,8 +1,11 @@
-Lernziele: ich kann:
+Lernziele: 
+
+ich kann:
 einen Account erstellen
 ein repo anlegen
-ein Dokument erstellen und die Änderungen committen (im Zwischenspeicher, s. Workflow)
-eine branch oeffnen und die dort erfolgten Aenderungen wieder mittels pull request mit dem master mergen 
+ein Dokument erstellen (create)
+ein Dokument aus dem eigenen Working Directory uploaden (etherpad, Plain text)
+eine branch oeffnen und die dort erfolgten Aenderungen committen und mittels pull request mit dem master mergen 
 eine fork öffnen
 
 ich weiß:
