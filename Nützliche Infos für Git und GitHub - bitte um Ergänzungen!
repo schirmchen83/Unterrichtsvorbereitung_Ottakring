@@ -1,5 +1,8 @@
 Gute Zusammenfassung: http://t3n.de/news/eigentlich-github-472886/
 
+GitHub: öffentliche (kostenfrei) und private (kostenpflichtig) Repositories möglich, für Nicht-Open-Source-Gebrauch also nur
+bedingt zu empfehlen, für Open-Source-Entwicklung aber Standard
+
 Git: Versionsverwaltung, Software kann dort auch heruntergeladen werden (alle Versionen)
 Hub: bestimmte Web-Fähigkeiten, die über Versionsverwaltung hinausgehen (die auch ohne Web-Interface oder zentralen Server
 möglich wären): grafische Darstellungen des Web-Prozesses, viele Befehle per Mausklick ausführbar (vs. Kommandozeile, GitShell)
