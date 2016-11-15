@@ -1,0 +1,61 @@
+Ideensammlung 
+
+- Was ist Versionsverwaltung (Video)
+  *) 4:04 engl. / Allgemeine Vorstellung / gute Darstellung, Sprecher langsam und gut illusitriert
+    https://www.youtube.com/watch?v=gY2JwRfin1M
+  *) 6:47 engl. / Änderungen und Branch Git; GitHub/ Finde es nicht gut, 
+    https://www.youtube.com/watch?v=H7hNgU39mlA
+  *) 2:41 engl. / Allgemeine Vorstellung / gute Darstellung, Sprecher normal und illustriert
+    https://www.youtube.com/watch?v=zbKdDsNNOhg
+  *) 12:33 engl/ Allgemeine Vorstellung und geht sehr in die Tiefe/ engl. Sprecher normal und Subtitle richtig, illustriert
+    https://www.youtube.com/watch?v=K0mgc3efx-A
+
+- Was ist Git bzw. GitHub udn GitLab?
+    Git ein System zur Versionsverwaltung
+    GitHub ist ein webbasierter Hosting-Dienst
+    GitLab ist ein lokaler/privater HostingDienst (lokal/privat Es ist nur im entsprechenden Netz erreichbar)
+    Quelle: https://alphanodes.com/de/unterschied-zwischen-git-github
+
+- Wer arbeitet alles mit GitHub, Beispiele
+  LibreOffice, Linux Derivate, ...
+
+  
+Studenablauf/plan - Entwurf
+
+Min	Aktion
+05	Uns selbst vorstellen und das Ziel dieser Stunde
+??	Video ansehen?
+10	Git Hub herunterladen und einen Account erstellen
+	-) GitHub-Account einrichten 
+	-) gemeinsam erste Schritte (s. GitHub-Einfuehrung, machen wir aber alle gemeinsam)
+	-) fuer die GitHub-Affinen: entweder andere Aufgaben (bevorzugt) oder Hilfestellungen fuer Kollegen 
+Ziel	Die SuS die ein Account haben wollen, sollen nun eine haben und
+	? GitHub Client installiert und verbunden haben
+	
+danach erst:
+	Titanpad (besser als ehterpad.net da keine Zeit läuft)
+	-)  wichtige Begriffe selbst erarbeiten
+	      Wörter: Repo, commit, Pull Request, Branch, Fork, Collaborators, 
+	      Bei Lokal auch: Stacking/Index, push, fetch, merge (pull= fetch+merge)
+	
+	-) gemeinsam mit etherpad.net, Affine ergäenzen und korrigieren, 
+	    danach wird das File als Plain text ins Repo geuploaded
+	-) Grafik s. GitHub-Einfuehrung --> Workflow erklaeren
+	    Informationen: http://ndpsoftware.com/git-cheatsheet.html
+	    Auch die Zeichung aus Youtube ist gut 
+	    https://youtu.be/K0mgc3efx-A?t=461
+
+- komplexere Aufgabe:
+	-) in Zweier Gruppen mit gegenseitigen Zugriff
+	-) Collaborateur eintragen
+	-) gemeinsam auf Repository zugreifen (collaborateur) 
+	-) und dort branchen,
+	-) etwas hinzufuegen/deleten, 
+	-) PullRequest stellen, [evtl. Probleme dabei erkennen (Mergen nicht moeglich)],
+	-) Fork
+	
+- Reflexion ueber Gelerntes, Ergebnissicherung:
+	-) Rot-Gruen-Karten fuer Wahr-Falsch-Fragen 
+	    [Kahoot ein Quiz erstellen] 
+	    Fragen: ??
+	    
