@@ -1,1 +1,20 @@
 Ideensammlung Katja
+
+- Was ist Versionsverwaltung (Video)
+- Was ist Git bzw. GitHub?
+- Wer arbeitet alles mit GitHub, Beispiele
+
+- GitHub-Account einrichten und gemeinsam erste Schritte (s. GitHub-Einfuehrung, machen wir aber alle gemeinsam)
+- fuer die GitHub-Affinen: entweder andere Aufgaben (bevorzugt) oder Hilfestellungen fuer Kollegen 
+
+danach erst:
+- wichtige Begriffe selbst erarbeiten (Repo, commit, Pull Request etc) --> gemeinsam mit etherpad.net, Affine ergäenzen und
+korrigieren, danach wird das File als Plain text ins Repo geuploaded
+- Grafik s. GitHub-Einfuehrung --> Workflow erklaeren
+
+- komplexere Aufgabe: 	
+	- gemeinsam auf Repository zugreifen (collaborateur) und dort branchen, etwas hinzufuegen/deleten, PullRequest 
+	stellen, evtl. Probleme dabei erkennen (Mergen nicht moeglich), forken und schauen was passiert
+	- am besten Zweiergruppen, gegenseitiger Zugriff auf Repository
+
+- Reflexion ueber Gelerntes, Ergebnissicherung: Rot-Gruen-Karten fuer Wahr-Falsch-Fragen

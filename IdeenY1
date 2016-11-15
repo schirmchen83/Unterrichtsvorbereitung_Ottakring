@@ -1,0 +1,28 @@
+Lernziele: ich kann
+einen account erstellen
+ein repo anlegen
+einen branch oeffnen und diesen mittels pull request committen (Anmerkung: eine Branch wird nicht mittels Pull Request committed, 
+sondern gemerged (meist mit dem Master). Ein commit ist das Speichern einer neuen Version einer branch (kann auch der Master selbst
+sein), das ist im Workflow ganz gut ersichtlich s. Gist)
+eine fork öffnen
+
+Lehrziele:
+Einfuehrung GitHub 
+Lernziele anhand eines Beispielprojektes vorfuehren mit git/desktopversion/github
+Kontrolle mittels Umfrage
+
+
+ungeordneter Ideenstrudel...
+
+Beispielprojekt: Lernende sollen sich einen Account schaffen, sich mit unserem Repository verlinken,
+Lernzielkontrolle mittels sich auch unserem Repository befindender Umfrage
+
+Lernende mit Vorkenntnissen in den Unterricht einbinden
+an den Vortragscomputer lassen / als tutoren beauftragen
+
+github-youtube-video suchen
+
+
+voraussetzungen:
+alle haben funktionierende laptops mit
+projektionsmöglichkeit mit passendem kabel
