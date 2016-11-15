@@ -143,9 +143,18 @@ git branch -v
 git branch -vv
 
 =-=-= Aktualisierung des Zweiges
-# Am Server wird nachgefragt ob es Änderungen gibt.
+# Am Server wird nachgefragt ob es Änderungen gibt,
+# weil unsere Übertragungsrichtung ist bis jetzt nur zum Server.
+git fetch 
+
+# Es wurden nur Information geholt, aber keine Daten.
+# Welche Zweige betroffen sind wird durch git branch
 # 	Die Angabe in der eckigen Klammer [balbla: 1 ahead/ 3 behind]
 # gibt Anzahl der Commits [NameRemote: Lokal /Remote] an.
+git branch -vv 
+
+# Um die Änderungen und neuen Dateien zu erhalten ist ein git merge nötig
+git merge 
 
 =-=-= Die Zweige wechseln 
 # Das wechseln der Zweige ist jeder Zeit möglich.
