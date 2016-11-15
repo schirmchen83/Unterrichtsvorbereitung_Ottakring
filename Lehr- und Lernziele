@@ -1,17 +1,29 @@
-Lernziele: 
-
-ich kann:
-einen Account erstellen
-ein repo anlegen
-ein Dokument erstellen (create)
-ein Dokument aus dem eigenen Working Directory uploaden (etherpad, Plain text)
-eine branch oeffnen und die dort erfolgten Aenderungen committen und mittels pull request mit dem master mergen 
-eine fork öffnen
-
-ich weiß:
-was Versionsverwaltung ist und wozu sie gebraucht wird
-wozu GitHub verwendet wird und von wem
-
 Lehrziele:
 Einfuehrung GitHub 
+
+Aufbauend auf dem Dagstuhl-Dreieck
+http://blog.doebe.li/Blog/DagstuhlDreieck
+
+Ich Kann:
+
+- Wie funktioniert das?
+    *) den Unterschied zwischen Push und Merge unterscheiden.
+    *) ein Unterschied zwischen Branch und Fork erklären.
+    *) den Unterschied zwischen Lokalen Repostiory und Remote Repository erklären
+
+- Wie nutze ich das?
+    *) einen Account erstellen und ein Repo anlegen
+    *) ein Projekt mit GitHub verwalten und entwickle, das ich alleine entwickeln
+    *) mir Vorstellen wie ein Projekt mit mehrern Entwicklern auf GitHub angelegt ist.
+    *) Daten zwischen Lokalen und Remote Respoitory übermitteln
+    *) eine Branch und Fork eröffnen
+  
+- Wie wirkt das?
+    *) den Nutzen eines Versionsverwaltung System beschreiben 
+    *) den Nutze bei Vielen Entwicklern erkennen
+    *) kann den Bedeutung eine Fork verstehen
+    
+   
+
+
 
