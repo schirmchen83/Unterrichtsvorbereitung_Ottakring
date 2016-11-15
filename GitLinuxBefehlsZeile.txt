@@ -1,0 +1,101 @@
+﻿=-=-= Handbuch
+# Informationen: 
+# 	https://git-scm.com/doc Handbuch von den Entwicklern
+# 	http://gitref.org/ mehr auf die Konsoel ausgelegt und knapp
+
+
+=-=-= Installieren
+# Pakete  benötigt
+# Informationen: https://git-scm.com/download/linux
+git
+git-all
+
+=-=-= User bestimmen
+# Wir legen fest als welcher User agiert wird.
+# Dieses wird in den Dateien ~/.gitconfig oder ~/.config/git/config festgelegt.
+# Persönlich finde ich ~/.config/git/config schöner.
+[user]
+	name = herbert03
+	email = johndoe@example.com
+
+=-=-= Projekt/Repository erstellen
+# a) über die Konsole erst lokal und dann hochladen 
+#	Information: https://developer.github.com/v3/repos/#create
+#	Es ist zu Aufwendig.
+
+# b) über die Webseite erstellen und dann hin verbinden
+# 	Das Reop wird mit als Ordern ErstesRep angelegt.
+#	Der Ordner darf noch nicht existieren.
+git clone https://github.com/herbert03/ErstesRep.git
+
++#+#+ Erweitertes Wissen
+# Im Ordner gibt es einen Ordner „.git“ (versteckt unter Linux).
+# Dieser Ordner enthält alle Informationen bezüglich
+# -) welchen Ort und Zweige
+# -) History, Stack,...
+
+=-=-= grob Vereinfachte Arbeitsweise
+# Informationen: http://ndpsoftware.com/git-cheatsheet.html
+# stash: Hier können Änderungen „geparkt“ werden, 
+#		während man an etwas anderem arbeitet
+# Arbeitskopie: Chekout des lokalen Repositories
+# Index: Zu commitende Dateien. Vor einem „commit“(checkin), 
+#		müssen die Dateien zuerst zu dem Index hinzugefügt werden. 
+#		Wird auch „staging area“ oder „staged files“ genannt.
+# Lokales Repository: Der lokale clone des Remote Repositories. 
+#		Es wird in dem Verzeichnis .git verwaltet.
+# 		Typische Branches sind: master, feature-x, bugfix-y
+# Remote Respository: Der Ursprung des lokalen Repositories. 
+#		Durch ein clone wird es automatisch als origin gesetzt.
+
+=-=-= Dateien zum Index / zur Staging Area hinzufügen
+# Diese Dateinen werden mit dem Server synchronisiert.
+# Reguläre Ausdrücke sollten unterstützt sein.
+
+git add Datei
+
++#+#+ .gitignore
+# Temporäre Dateien, die von Programmen angelegt werden, 
+#	und keine Bedeutung für das Projekt haben, 
+#	können in diesem Datei angeben werden. Sie werden ignoriert.
+
+=-=-= Dateien im Index / Staging Area
+# Es wird der Status der Dateien, die beobachtet werden, angezeigt
+# im Spannungsfeld zwischen Lokalen Repository und Arbeitskopie.
+#
+# Der Befehl „git status“ gibt aus, 
+# welche Veränderungen im Arbeistverzeichnis statt gefunden haben.
+git status
+
+# Der Befehl git status -s gib aus,
+# welche Veränderungen zwischen Lokalen Repository und Arbeitskopie
+# statt gefunden haben.
+# Information: man git status 
+
+Ignored files are not listed, unless --ignored option is in effect, in which case XY are !!.
+
+           X          Y     Meaning
+           -------------------------------------------------
+                     [MD]   not updated
+           M        [ MD]   updated in index
+           A        [ MD]   added to index
+           D         [ M]   deleted from index
+           R        [ MD]   renamed in index
+           C        [ MD]   copied in index
+           [MARC]           index and work tree matches
+           [ MARC]     M    work tree changed since index
+           [ MARC]     D    deleted in work tree
+           -------------------------------------------------
+           D           D    unmerged, both deleted
+           A           U    unmerged, added by us
+           U           D    unmerged, deleted by them
+           U           A    unmerged, added by them
+           D           U    unmerged, deleted by us
+           A           A    unmerged, both added
+           U           U    unmerged, both modified
+           -------------------------------------------------
+           ?           ?    untracked
+           !           !    ignored
+           -------------------------------------------------
+
+=-=-= Dateien vom Index / aus Staging Area entfernen
