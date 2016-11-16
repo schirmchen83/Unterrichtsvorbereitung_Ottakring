@@ -38,6 +38,9 @@ Wichtige Kommandozeilen-Befehle: weitere s. https://confluence.atlassian.com/bit
   
   git create -d "My new thing": schafft ein neues Projekt (Repository) mit Namen "My-new thing"
   Dieser Befehl ist nicht belegt. git --help listet diesen auch nicht.
+  komisch denn hub manual unter: https://hub.github.com/hub.1.html sagt:
+  Custom git commands:
+git create [NAME] [-p] [-d DESCRIPTION] [-h HOMEPAGE]
   
 git init: wandelt ein bestehendes directory in ein Git-Repository um (zu erkennen an /.git/ am Ende des Verzeichnisses (directory)
 git status: zeigt alle changes eines Repositories an, wenn es welche gibt (sonst untracked files)
