@@ -1,0 +1,191 @@
+﻿=-=-= Handbuch
+# Informationen: 
+# 	https://git-scm.com/doc Handbuch von den Entwicklern
+# 	http://gitref.org/ mehr auf die Konsoel ausgelegt und knapp
+
+
+=-=-= Installieren
+# Pakete  benötigt
+# Informationen: https://git-scm.com/download/linux
+git
+git-all
+
+=-=-= User bestimmen
+# Wir legen fest als welcher User agiert wird.
+# Dieses wird in den Dateien ~/.gitconfig oder ~/.config/git/config festgelegt.
+# Persönlich finde ich ~/.config/git/config schöner.
+[user]
+	name = herbert03
+	email = johndoe@example.com
+
+=-=-= Projekt/Repository erstellen
+# a) über die Konsole erst lokal und dann hochladen 
+#	Information: https://developer.github.com/v3/repos/#create
+#	Es ist zu Aufwendig.
+
+# b) über die Webseite erstellen und dann hin verbinden
+# 	Das Reop wird mit als Ordern ErstesRep angelegt.
+#	Der Ordner darf noch nicht existieren.
+git clone https://github.com/herbert03/ErstesRep.git
+
++#+#+ Erweitertes Wissen
+# Im Ordner gibt es einen Ordner „.git“ (versteckt unter Linux).
+# Dieser Ordner enthält alle Informationen bezüglich
+# -) welchen Ort und Zweige
+# -) History, Stack,...
+
+=-=-= grob Vereinfachte Arbeitsweise
+# Informationen: http://ndpsoftware.com/git-cheatsheet.html
+# stash: Hier können Änderungen „geparkt“ werden, 
+#		während man an etwas anderem arbeitet
+# Arbeitskopie: Chekout des lokalen Repositories
+# Index: Zu commitende Dateien. Vor einem „commit“(checkin), 
+#		müssen die Dateien zuerst zu dem Index hinzugefügt werden. 
+#		Wird auch „staging area“ oder „staged files“ genannt.
+# Lokales Repository: Der lokale clone des Remote Repositories. 
+#		Es wird in dem Verzeichnis .git verwaltet.
+# 		Typische Branches sind: master, feature-x, bugfix-y
+# Remote Respository: Der Ursprung des lokalen Repositories. 
+#		Durch ein clone wird es automatisch als origin gesetzt.
+
+=-=-= Dateien zum Index / zur Staging Area hinzufügen
+# Diese Dateinen werden mit dem Server synchronisiert.
+# Reguläre Ausdrücke sollten unterstützt sein.
+
+git add Datei
+
++#+#+ .gitignore
+# Temporäre Dateien, die von Programmen angelegt werden, 
+#	und keine Bedeutung für das Projekt haben, 
+#	können in diesem Datei angeben werden. Sie werden ignoriert.
+
+=-=-= Dateien Umbennen im Index / Staging Area
+# Damit die Datei nicht doppelt vorhanden ist, 
+# erfolgt das Umbenennen auf diese Weise.
+#	Auf eine anderer Art würde die alte Datei weiter aufbewahrt werden.
+git mv Name_alt Name_neu
+
+=-=-= Dateien im Index / Staging Area
+# Es wird der Status der Dateien, die beobachtet werden, angezeigt
+# im Spannungsfeld zwischen Lokalen Repository und Arbeitskopie.
+#
+# Der Befehl „git status“ gibt aus, 
+# welche Veränderungen in der Arbeitskopie statt gefunden haben.
+git status
+
+# Der Befehl git status -s gib aus,
+# welche Veränderungen zwischen Lokalen Repository und Arbeitskopie
+# statt gefunden haben.
+# Information: man git status 
+
+Ignored files are not listed, unless --ignored option is in effect, in which case XY are !!.
+
+           X          Y     Meaning
+           -------------------------------------------------
+                     [MD]   not updated
+           M        [ MD]   updated in index
+           A        [ MD]   added to index
+           D         [ M]   deleted from index
+           R        [ MD]   renamed in index
+           C        [ MD]   copied in index
+           [MARC]           index and work tree matches
+           [ MARC]     M    work tree changed since index
+           [ MARC]     D    deleted in work tree
+           -------------------------------------------------
+           D           D    unmerged, both deleted
+           A           U    unmerged, added by us
+           U           D    unmerged, deleted by them
+           U           A    unmerged, added by them
+           D           U    unmerged, deleted by us
+           A           A    unmerged, both added
+           U           U    unmerged, both modified
+           -------------------------------------------------
+           ?           ?    untracked
+           !           !    ignored
+           -------------------------------------------------
+
+=-=-= Dateien vom Index / aus Staging Area entfernen
+# a) Dateien können vollstandig entfernt werden,
+git rm Dateiname
+# b) oder nur aus dem Index/Staging Area
+git rm -cache Dateiname
+
+=-=-= Dateien zwischen Arbeitskopie und Lokalen Repository synchronisieren
+# Damit die Dateien lokal zwischen gespeichert werden.
+# Es ist wichtig kleine Schritte zu speichern und genau zu beschreiben,
+# damit nachher leichter eine Dokumentation erstellt werden kann.
+# Weiter ist der Projektvorschritt genau dokumentiert und nachvollziehbar. 
+git commit
+git commit -m ‘Betreff
+(leere Zeile) 
+genauere Erklärung‘
+
++#+#+ git commit -a (short cut)
+
+=-=-= Dateien zwischen Lokalen und Remote Repository synchronisieren
+# ACHTUNG: Dies ist nur eine Richtung.
+# Die Dateien werden auf den Server gespielt, 
+# und sind nun nicht mehr lokal verfügbar.
+# Alle Erklärungen von den commits werden mit übertragen.
+git push
+
+=-=-= Arbeiten mit mehren Personen und/oder Ideen
+=-=-= Branch / Zweig
+# Auf Basis des gegenwärtigen Zustandes wird eine eigenständige
+# Entwicklung begonnen, die nicht mit das Original direkt Betrifft.
+git branch Zweigname
+
+=-=-= Welcher Zweig ist aktiv / vorhanden
+# Die Änderungen sollen im richtigen Zweig gesehen,
+# dafür sollte man im richtigen Zweig stehen.
+# Der aktive Zweig ist vorne mit einem „+“ gekennzeichnet.
+git branch -v
+git branch -vv
+
+=-=-= Aktualisierung des Zweiges
+# Am Server wird nachgefragt ob es Änderungen gibt,
+# weil unsere Übertragungsrichtung ist bis jetzt nur zum Server.
+git fetch 
+
+# Es wurden nur Information geholt, aber keine Daten.
+# Welche Zweige betroffen sind wird durch git branch
+# 	Die Angabe in der eckigen Klammer [balbla: 1 ahead/ 3 behind]
+# gibt Anzahl der Commits [NameRemote: Lokal /Remote] an.
+git branch -vv 
+
+# Um die Änderungen und neuen Dateien zu erhalten ist ein git merge nötig
+git merge 
+
+=-=-= Die Zweige wechseln 
+# Das wechseln der Zweige ist jeder Zeit möglich.
+# Am leichtsten geht das Wechseln nach einem commit.
+# stash, welches ein Wechseln ohne commit erlaubt,
+# wird nicht behandelt.
+
+git checkout neuerZweigname
+
+=-=-= Dateien zwischen Remote und Lokalen Repository synchronisieren
+# Die Dateien werden ind das Lokale Repository gespielt, 
+# und sind nun lokal verfügbar.
+# 	Alle Erklärungen von den commits werden mit übertragen.
+#	1) Im dem Zweig stehen, der die Daten erhalten soll. 
+#		git checkout Name
+#	2) Wissen von welchen Zweig die Daten kommen sollen.
+git merge Zweigname
+
+
+=-=-= Branch vs Fork
+# Damit ein Branch erstellt werden kann,
+# werden Schreibrechte im Remote Repository benötigt.
+# 	Fork wird erstellt, wenn man keine Schreibrechte hat, 
+# oder eine separate Entwicklung betreiben möchte.
+#	Von ein Branch lässt sich kein Fork erstellen.
+# weiter führende Information:
+# http://blog.scottlowe.org/2015/01/27/using-fork-branch-git-workflow/
+
+=-=-= Löschen des Branch
+git branch -d Zweigname
+
+=-=-= Löschen des Repository
+# Kann nur auf der Webseite gelöscht werden.
+
