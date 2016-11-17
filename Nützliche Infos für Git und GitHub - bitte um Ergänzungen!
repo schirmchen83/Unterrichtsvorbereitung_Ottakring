@@ -35,7 +35,10 @@ Fork (Gabel): eigener Ableger eines bereits bestehenden Repositories (als neues 
 verbunden ist; wird benutzt, um eigene Projekte aufzusetzen, die auf bereits bestehenden aufbauen
 
 Wichtige Kommandozeilen-Befehle: weitere s. https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
-git create -d "My new thing": schafft ein neues Projekt (Repository) mit Namen "My-new thing"
+  
+  git create -d "My new thing": schafft ein neues Projekt (Repository) mit Namen "My-new thing"
+  Dieser Befehl ist nicht belegt. git --help listet diesen auch nicht.
+  
 git init: wandelt ein bestehendes directory in ein Git-Repository um (zu erkennen an /.git/ am Ende des Verzeichnisses (directory)
 git status: zeigt alle changes eines Repositories an, wenn es welche gibt (sonst untracked files)
 git add 'filename': fügt ein File zur Staging Area hinzu
